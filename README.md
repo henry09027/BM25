@@ -13,7 +13,7 @@ data_utils.download_data_gdown("./") # gdrive-ckip
 
 ## DataSet (List of dictionaries)
 
-* Label Set
+* Label Set \
 External queries each with 0-3 internal pairs. \
 Example:
 ```
@@ -36,7 +36,7 @@ Example:
     "應匹配的內規3內容": NaN
 }
 ```
-* Internal Set
+* Internal Set \
 A list of internal corpus. \
 Example:
 ```
