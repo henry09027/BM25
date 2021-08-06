@@ -50,4 +50,4 @@ Example:
 }
 ```
 ## Model Workflow
-![alt text](https://github.com/henry/BM25/Screen Shot 2021-08-06 at 1.37.15 PM.png)
+![alt text](https://github.com/henry/BM25/workflow_pic.png)
