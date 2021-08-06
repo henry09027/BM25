@@ -55,3 +55,11 @@ Example:
 ```
 ## Model Workflow
 ![alt text](https://github.com/henry09027/BM25/blob/main/workflow_pic.png)
+
+## Method
+
+
+
+## Model Generations
+
+## Result
