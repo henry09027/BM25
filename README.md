@@ -1,5 +1,9 @@
 # BM25
 
+## Introduction
+
+BM25 is a ranking function used by search engines to estimate the relevance of documents to a given search query. This README provides an overview of how the BM25 model is used to complete a semantic textual similarity(STS) task on Chinese-based law corupus.
+
 ## Prerequiste
 * tensorflow pip installed
 * ckiptagger pip installed
