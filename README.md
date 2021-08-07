@@ -19,7 +19,7 @@ data_utils.download_data_gdown("./") # gdrive-ckip
 
 * Label Set \
 External queries each with 0-3 internal pairs. \
-Example:
+Sample:
 ```
 {
     "外規內容": "第b6至b8段提供評估資產對企業是否有其他用途之指引。",
@@ -42,7 +42,7 @@ Example:
 ```
 * Internal Set \
 A list of internal corpus. \
-Example:
+Sample:
 ```
 {
     "法規名稱": "1050323融資循環_捷智_V1@20170410 (1)",
@@ -54,15 +54,18 @@ Example:
 }
 ```
 ## Model Workflow
-![alt text](https://github.com/henry09027/BM25/blob/main/workflow_pic.png)
+![alt text](https://github.com/henry09027/BM25/blob/main/photo/workflow_pic.png)
 
 ## Method
 
 Firstly, call the BM25_generate_scores.py function, which will build the model with tokenized internal corpus and will pick out top 100 most similar label-internal pairs with their similarity scores calculated by the model. Secondly, the BM25_filter_and_index.py function does [min_threshold, max_threshold] X [min_k, max_k] model predictions filtering based on their similarity scores before converting predictions and answers to index for simplicity. Lastly, the accuracy, presicion, recall and f1-score of the individual threshold and top k filtered predictions can be calculated and saved to a csv table by the BM25_calculate_matrics.py function.  
 
 ## Model Generations
-Example:
+Sample:
 
-![alt text](https://github.com/henry09027/BM25/blob/main/model_predictions.png)
+![alt text](https://github.com/henry09027/BM25/blob/main/photo/model_predictions.png)
 
 ## Result
+Sample:
+
+![alt text](https://github.com/henry09027/BM25/blob/main/photo/result_table.png)
