@@ -63,6 +63,6 @@ Firstly, call the BM25_generate_scores.py function, which will build the model w
 ## Model Generations
 Example:
 
-![alt text](https://github.com/henry09027/BM25/blob/main/model_generation.png)
+![alt text](https://github.com/henry09027/BM25/blob/main/model_generations.png)
 
 ## Result
