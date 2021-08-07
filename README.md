@@ -61,5 +61,8 @@ Example:
 Firstly, call the BM25_generate_scores.py function, which will build the model with tokenized internal corpus and will pick out top 100 most similar label-internal pairs with their similarity scores calculated by the model. Secondly, the BM25_filter_and_index.py function does [min_threshold, max_threshold] X [min_k, max_k] model predictions filtering based on their similarity scores before converting predictions and answers to index for simplicity. Lastly, the accuracy, presicion, recall and f1-score of the individual threshold and top k filtered predictions can be calculated and saved to a csv table by the BM25_calculate_matrics.py function.  
 
 ## Model Generations
+Example:
+
+![alt text](https://github.com/henry09027/BM25/blob/main/model_generation.png)
 
 ## Result
