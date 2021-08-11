@@ -75,4 +75,4 @@ Sample final f1-score table:
 | ------------- |:----------------:|:----------------:|:----------------:|:----------------:|
 | BM25          |    0.1994 (7.5)  |    0.3300 (5)    |    0.3940 (5)    |    0.4368 (5)    |
 
-*f1 score on the data0716/label-test.json dataset.
+*f1 scores on the data0716/label-test.json dataset.
