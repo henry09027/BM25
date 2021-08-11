@@ -14,7 +14,7 @@ PRED = 'prediction'
 
 console=Console(record=True)
 
-def final_result(directory):
+def final_result(directory: str):
     #import data
     console.print('Loading data')
     files = os.listdir(directory)
@@ -41,7 +41,7 @@ def final_result(directory):
     result_df.to_csv(output_filename, encoding='utf-8')
     console.print('Complete Calculations')
 
-def calculate_metrics(outcome):
+def calculate_metrics(outcome: List[Dict[str, Union[int, List[int]]]]):
     tp, fn, tn, fp = 0, 0, 0, 0
     for row in outcome:
         ans_1 = row[ANS_1] # int > -1 if there is true answer, -1 if there is no answer
