@@ -71,6 +71,6 @@ Sample final f1-score table:
 
 ## Result
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
+| Model         | f1@ threshold: 1 | f1@ threshold: 5 | f1@ threshold: 10| f1@ threshold: 20|
+| ------------- |:----------------:|:----------------:|:----------------:|-----------------:|
+| BM25          |   0.1994 (7.5)   |    0.3300 (5)    |  0.3940 (5)      |  0.4368 (5)      |
