@@ -5,10 +5,11 @@ import copy
 
 from rich.console import Console
 from tqdm import tqdm
+from typing import List, Dict, Union
 
 console=Console(record=True)
 
-def get_results(output_directory, internal_dictionary, prediction, max_threshold, mini_threshold, max_k, mini_k):
+def get_results(output_directory: str, internal_dictionary: Dict[str, int], prediction: List[Dict[str, Union[str, List[int]]]], max_threshold: float, mini_threshold: float, max_k: int, mini_k: int):
     console.print('Start Filtering and Indexing')
     threshold_range = np.linspace(mini_threshold, max_threshold, 20)
     k_range = [1, 5, 10, 20] #here I am custumizing the k_range so didn't use mini_k and max_k
@@ -22,7 +23,7 @@ def get_results(output_directory, internal_dictionary, prediction, max_threshold
                 json.dump(result, f, ensure_ascii=False,indent=4)
     console.print('Filtering and Indexing Completed')
 
-def filter_predictions(prediction, k, threshold):
+def filter_predictions(prediction: List[Dict[str, Union[str, List[int]]]], k: int, threshold: float):
     for dic in prediction:
        # filter threshold
         for key_ in dic['prediction'].copy():
@@ -32,7 +33,7 @@ def filter_predictions(prediction, k, threshold):
         dic['prediction'] = sorted(dic['prediction'], key=dic['prediction'].get,reverse=True)[:int(k)]
     return prediction
 
-def index_predictions(internal_dictionary, prediction):
+def index_predictions(internal_dictionary: Dict[str, int], prediction: List[Dict[str, Union[int, List[int]]]]):
         
     #map internal to index
     for dic in prediction:
