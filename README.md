@@ -65,7 +65,12 @@ Sample:
 
 ![alt text](https://github.com/henry09027/BM25/blob/main/photo/model_predictions.png)
 
-## Result
-Sample:
+Sample final f1-score table:
 
 ![alt text](https://github.com/henry09027/BM25/blob/main/photo/result_table.png)
+
+## Result
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
